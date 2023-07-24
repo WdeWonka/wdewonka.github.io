@@ -1,2 +1,1 @@
-# wdewonka.github.io
 Projects
