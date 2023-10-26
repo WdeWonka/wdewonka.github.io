@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aplicacion de Salario</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-container">
+        <!-----------------Bar----------------->
+        <div class="form-sidebar gradient">
+          <div class="step active">
+            <div class="circle">1</div>
+            <div class="step-content">
+              <span>Paso 1 </span>
+              <b>Cantidad</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="step-content">
+              <span>Paso 2</span>
+              <b>Información</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="step-content">
+              <span>Paso 3</span>
+              <b>Evaluación</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">4</div>
+            <div class="step-content">
+              <span>Paso 4</span>
+              <b>Finalización</b>
+            </div>
+          </div>
+          <div class="nametag">by William Garcia</div>
+        </div>
+
+        <!-- --------------PASO 1-------------- -->
+        <div class="stp step-1">
+          <div class="header">
+            <h1 class="title">Personaliza tu cálculo</h1>
+            <p class="exp">&nbsp;Escoge el número de empleados a calcular.</p>
+          </div>
+          <form>
+            <div class="plan-card">
+              <img src="images/man.png" alt="icon1" />
+              <div class="plan-info">
+                <b>I</b>
+                <span class="plan-cantidad">1</span>
+              </div>
+            </div>
+
+            <div class="plan-card">
+              <img src="images/3.png" alt="icon2" />
+              <div class="plan-info">
+                <b class="center1">III</b>
+                <span class="plan-cantidad">3</span>
+              </div>
+            </div>
+
+            <div class="plan-card">
+              <img src="images/team.png" alt="icon3" />
+              <div class="plan-info">
+                <b class="center2">V</b>
+                <span class="plan-cantidad">5</span>
+              </div>
+            </div>
+          </form>
+
+          <div class="btns">
+            <button class="next-stp" type="submit">Continuar</button>
+          </div>
+        </div>
+
+        <!-- ------------PASO 2------------------>
+        <div class="stp step-2">
+          <div class="header">
+            <h1 class="title">Informacion de Empleado</h1>
+            <p class="exp">&nbsp;Completa la información de empleado(s).</p>
+          </div>
+          <div id="form-layout" class="form-scroll-container">
+            <form>
+              <div class="label">
+                <label for="dpi">DPI</label>
+                <p class="error"></p>
+              </div>
+              <input
+                type="text"
+                required
+                id="dpi"
+                placeholder="Escriba su numero de dpi"
+              />
+
+              <div class="label">
+                <label for="name">Nombre</label>
+                <p class="error"></p>
+              </div>
+              <input
+                type="text"
+                required
+                id="name"
+                placeholder="Escriba su nombre "
+              />
+
+              <div class="shrink">
+                <div class="label">
+                  <label for="salario">Salario</label>
+                  <p class="error"></p>
+                </div>
+                <input
+                  type="number"
+                  required
+                  id="salario"
+                  min="0"
+                  max="100000"
+                  placeholder="Q."
+                />
+              </div>
+
+              <div class="shrink">
+                <div class="label">
+                  <label for="horasEX">Horas Extra</label>
+                  <p class="error"></p>
+                </div>
+                <input
+                  type="number"
+                  required
+                  id="horasEX"
+                  min="0"
+                  max="100000"
+                  placeholder="Q."
+                />
+              </div>
+
+              <div class="shrink">
+                <div class="label">
+                  <label for="bonus">Bonificacion</label>
+                  <p class="error"></p>
+                </div>
+                <input
+                  type="number"
+                  required
+                  id="bonus"
+                  min="0"
+                  max="100000"
+                  placeholder="Q."
+                />
+              </div>
+              <div class="divider"></div>
+            </form>
+          </div>
+
+          <div class="btns">
+            <button class="next-stp" type="submit">Continuar</button>
+          </div>
+        </div>
+
+        <!-- ------------PASO 3------------------>
+        <div class="stp step-3">
+          <div class="header">
+            <h1 class="title">Tabla de Salarios</h1>
+            <p class="exp">&nbsp;Lista de empleados y sus ingresos totales.</p>
+          </div>
+          <div id="cart">
+            <table width="100%">
+              <thead>
+                <tr>
+                  <td>Dpi</td>
+                  <td>Nombre</td>
+                  <td>Salario</td>
+                  <td>Hrs extra</td>
+                  <td>Bonus</td>
+                  <td>Ornato</td>
+                  <td>
+                    <div class="short-ph">
+                      S.A.R
+                      <span class="tooltip">Salario a Recibir</span>
+                    </div>
+                  </td>
+                </tr>
+              </thead>
+              <tbody class="empleados-table">
+                <tr class="empleados">
+                  <td id="dpi-td"></td>
+                  <td id="name-td"></td>
+                  <td id="salario-td"></td>
+                  <td id="horasX-td"></td>
+                  <td id="bonus-td"></td>
+                  <td id="ornato-td"></td>
+                  <td id="SAR-td"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="add-total">
+            <table class="totales-table">
+              <tbody class="totales-table-body">
+                <tr class="total-tr-1">
+                  <td><strong>Total de Horas extra</strong></td>
+                  <td id="total-td-1"></td>
+                </tr>
+                <tr class="total-tr-2">
+                  <td><strong>Promedio de Salarios</strong></td>
+                  <td id="total-td-2"></td>
+                </tr>
+
+                <tr class="total-tr-3">
+                  <td><strong>Total de Salarios</strong></td>
+                  <td id="total-td-3"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="btns">
+            <button class="prev-stp" type="button">Regresar</button>
+            <button class="next-stp" type="submit">Pagar</button>
+          </div>
+        </div>
+        <!---------------- PASO 4------------------>
+
+        <div class="stp step-4">
+          <img src="images/team-check.png" alt="thank" />
+          <div class="header">
+            <h1 class="title">Pagos Procesados</h1>
+            <p class="exp">
+              Ha sido un placer ayudarte, la transaccion ha sido gestionada de
+              manera exitosa.
+            </p>
+          </div>
+          <div class="home-button">
+            <button class="next-stp refresh-stp">
+              <img src="images/actualizar.png" class="refresh" alt="refresh" />
+            </button>
+          </div>
+        </div>
+        <!-- ------------------------------->
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
