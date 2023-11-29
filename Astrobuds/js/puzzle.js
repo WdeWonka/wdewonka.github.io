@@ -1,11 +1,4 @@
-//--------If not register, go back to index -------------
-document.addEventListener("DOMContentLoaded", function () {
-  let isLoggedIn = localStorage.getItem("isLoggedIn");
 
-  if (!isLoggedIn || isLoggedIn !== "true") {
-    window.location.replace("index.html");
-  }
-});
 
 //-------------- BACKCGROUND ANIMATION -----------------
 const bgAnimation = document.getElementById("bg-animation");
