@@ -10,13 +10,7 @@ for (let i = 0; i < numberOfColorBox; i++) {
   bgAnimation.append(colorumBox);
 }
 
-//---- IF not register , moves back to the index------------
-document.addEventListener("DOMContentLoaded", function () {
-  let isLoggedIn = localStorage.getItem("isLoggedIn");
-  if (!isLoggedIn || isLoggedIn !== "true") {
-    window.location.replace("index.html");
-  }
-});
+
 
 //-------------- MEMORY GAME---------------------------
 
