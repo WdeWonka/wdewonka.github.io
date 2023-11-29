@@ -302,7 +302,7 @@ section {
 
 .layer-1 {
   display: block;
-  background-image: url("/assets/images/curved.svg");
+  background-image: url("assets/images/curved.svg");
 }
 
 .container-ab {
@@ -389,7 +389,7 @@ section {
 
 .layer-2 {
   display: block;
-  background-image: url("/assets/images/curved-2.svg");
+  background-image: url("assets/images/curved-2.svg");
 }
 
 #cursos > h1 {
@@ -620,7 +620,7 @@ section {
 }
 
 .layer-3 {
-  background-image: url("/assets/images/curved-3.svg");
+  background-image: url("assets/images/curved-3.svg");
 }
 
 .tst-container {
@@ -675,7 +675,7 @@ section {
   width: 90%;
   max-width: 100%;
   position: relative;
-  background-image: url(/assets/images/profile-pics/map.png);
+  background-image: url(assets/images/profile-pics/map.png);
   z-index: 0;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -863,7 +863,7 @@ section {
 }
 
 .layer-4 {
-  background-image: url("/assets/images/curved-4.svg");
+  background-image: url("assets/images/curved-4.svg");
 }
 .faq-container {
   display: flex;
@@ -1004,7 +1004,7 @@ section {
 
 .layer-5 {
   display: block;
-  background-image: url("/assets/images/curved-5.svg");
+  background-image: url("assets/images/curved-5.svg");
 }
 
 .contact-wrapper {
@@ -1293,7 +1293,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(/assets/images/wave-2.png);
+  background: url(assets/images/wave-2.png);
   background-size: 1000px 101px;
 }
 
