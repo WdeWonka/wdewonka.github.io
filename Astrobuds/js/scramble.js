@@ -102,10 +102,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//---- IF not register , moves back to the index------------
-document.addEventListener("DOMContentLoaded", function () {
-  let isLoggedIn = localStorage.getItem("isLoggedIn");
-  if (!isLoggedIn || isLoggedIn !== "true") {
-    window.location.replace("index.html");
-  }
-});
+
