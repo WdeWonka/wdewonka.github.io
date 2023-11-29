@@ -298,6 +298,7 @@ section {
   background-position: center;
   background-size: cover;
   position: relative;
+  background: #046395;
 }
 
 .layer-1 {
@@ -385,6 +386,7 @@ section {
   background-position: center;
   background-size: cover;
   position: relative;
+  background: #6e6bc4;
 }
 
 .layer-2 {
@@ -617,6 +619,7 @@ section {
   background-size: cover;
   overflow: hidden;
   padding: 1.5rem 0;
+  background-color: #a071cc;
 }
 
 .layer-3 {
@@ -860,6 +863,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #5a3762;
 }
 
 .layer-4 {
@@ -1000,6 +1004,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+    background-color: #151019;
 }
 
 .layer-5 {
