@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --white: #eaf0e7;
+}
+
+.container {
+  width: 100% !important;
+  height: 100vh;
+  min-width: 500px;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  filter: brightness(0.7);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.container {
+  background-color: #007ced;
+  background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
+}
+#cloud-intro {
+  position: relative;
+  height: 100%;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0
+      200px,
+    url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+    url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px
+      250px;
+  animation: wind 20s linear infinite;
+  z-index: 1;
+}
+
+/* -------------some animation------------ */
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: rgba(255, 244, 244, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  padding: 5px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  margin: 35px auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.209);
+  box-shadow: 0 0 25px 5px #0000003b;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  color: var(--white);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  background: #1d1d1d;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.welcome-text {
+  background: transparent;
+  margin: 20px auto;
+  text-align: center;
+  color: #fff;
+
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s ease;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid var(--white);
+  outline: none;
+  background-color: transparent;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background-color: #1d1d1d;
+  color: var(--white);
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.check-box {
+  margin: 30px 10px 30px 0;
+}
+
+.check-box p {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.check-box .text {
+  font-size: 14px;
+  color: #cce7ff;
+}
+
+.check-box {
+  accent-color: #000;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+  color: var(--white);
+}
+
+#register {
+  left: 450px;
+}
+
+#login {
+  left: 50px;
+}
+input,
+input::placeholder,
+input:focus {
+  color: var(--white);
+}
+
+.terms {
+  font-size: 13px;
+  color: var(--white);
+}
+
+.terms a {
+  color: var(--white);
+  font-weight: 600;
+}

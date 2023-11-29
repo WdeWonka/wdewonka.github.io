@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------web icon--------------------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/astronaut-logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- ----------------------------icons ----------------------- -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- -------------------------------links------------------------------  -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css"
+    />
+
+    <meta name="author" content="William Garcia" />
+    <title>AstroBuds</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/images/astronaut-logo.png" alt="log" />
+          </a>
+        </div>
+
+        <div class="menu">
+          <a id="nav-toggle" class="open" href="#"><span></span></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+
+          <button class="btn-login">
+            <span>Cerrar Sesion</span>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <img
+          src="assets/images/1.png"
+          class="parallax bg-1"
+          data-speedx="0.05"
+          data-speedy="0.05"
+          data-distance="500"
+        />
+        <img
+          src="assets/images/floor.png"
+          data-speedx="0"
+          data-speedy="0"
+          data-distance="-1100"
+          class="parallax bg-img"
+        />
+        <img
+          src="assets/images/left-mountain.png"
+          class="parallax left-mountain"
+          data-speedx="0"
+          data-speedy="0"
+          data-distance="-1200"
+        />
+        <img
+          src="assets/images/right-mountain.png"
+          class="parallax right-mountain"
+          data-speedx="0"
+          data-speedy="0"
+          data-distance="-1200"
+        />
+        <div
+          class="text-title parallax"
+          data-speedx="0.010"
+          data-speedy="0.010"
+        >
+          <h2>Explora el Espacio con</h2>
+          <h1>AstroBuds</h1>
+        </div>
+        <img
+          src="assets/images/moon.png"
+          class="parallax moon"
+          data-speedx="0.01"
+          data-speedy="0.01"
+          data-distance="2000"
+        />
+        <img
+          src="assets/images/big-planet.png"
+          class="parallax big-planet"
+          data-speedx="0.03"
+          data-speedy="0.03"
+          data-distance="2500"
+        />
+        <img
+          src="assets/images/lil-planet.png"
+          class="parallax lil-planet"
+          data-speedx="0.02"
+          data-speedy="0.02"
+          data-distance="3500"
+        />
+      </section>
+
+      <section id="about" class="layer-1">
+        <div class="container-ab">
+          <div class="about-container">
+            <div class="image-container">
+              <img src="assets/images/crack.png" alt="crack" />
+            </div>
+            <div class="txt-container">
+              <span>NOSOTROS</span>
+              <h1>AstroBuds</h1>
+              <p>
+                Somos una plataforma educativa emocionante diseñada
+                especialmente para niños. Convirtiendo el aprendizaje en una
+                aventura cósmica, despertar la curiosidad y encender la
+                imaginación. Explora un entorno estelar donde las mentes jóvenes
+                puedan desarrollar habilidades motoras a través de divertidos
+                juegos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cursos" class="layer-2">
+        <h1>Desafíos Cósmicos</h1>
+        <div class="card-wrapper">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <div class="inner">
+                <img src="assets/images/cards/gamma-1.png" class="card-img" />
+                <h1>Memoria cósmica</h1>
+                <p>Presiona para girar</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="inner">
+                <h2>⭐ Detalles ⭐</h2>
+                <p>
+                  Explora el cosmos con Memoria Galáctica, un juego de memoria
+                  que desafía tus habilidades. Empareja objetos galácticos y
+                  sumérgete en la maravilla estelar. <br />
+                  <br />
+                  ¿Listo para la aventura?
+                </p>
+                <div class="btn-container">
+                  <div class="btn">
+                    <a href="memory.html">
+                      <span>¡Explorar!</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <div class="inner">
+                <img
+                  src="assets/images/cards/beta-2.png"
+                  alt=""
+                  class="card-img"
+                />
+                <h1>Desafío Planetario</h1>
+                <p>Presiona para girar</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="inner">
+                <h2>⭐ Detalles ⭐</h2>
+                <p>
+                  Sumérgete en el misterioso cosmos con Desafío Planetario,
+                  donde cada decision revela la grandiosidad del universo.
+                  <br />
+                  <br />
+                  ¿Listo para la aventura?
+                </p>
+                <div class="btn-container">
+                  <div class="btn">
+                    <a href="puzzle.html">
+                      <span>¡Explorar!</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <div class="inner">
+                <img
+                  src="assets/images/cards/gamma-3.png"
+                  alt=""
+                  class="card-img"
+                />
+                <h1>Palabras Orbitáles</h1>
+                <p>Presiona para girar</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div class="inner">
+                <h2>⭐ Detalles ⭐</h2>
+                <p>
+                  Desafía tu mente con Palabras Desordenadas. Encuentra las
+                  palabras cósmicas ocultas y sumérgete en un juego de
+                  descifrado celestial. <br />
+                  <br />
+                  ¿Listo para la aventura?
+                </p>
+
+                <div class="btn-container">
+                  <div class="btn">
+                    <a href="scramble.html">
+                      <span>¡Explorar!</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="layer-3">
+        <div class="container">
+          <div class="tst-container">
+            <div class="heading-text">
+              <h1>Testimonial</h1>
+              <h2>Pensamientos que Navegan el Espacio</h2>
+              <p>
+                Explora las historias de nuestros exploradores cósmicos y su
+                experiencia única en nuestro universo educativo.
+              </p>
+            </div>
+          </div>
+
+          <div class="row box-container">
+            <div class="col-md-6">
+              <div class="test-bg">
+                <ul class="testimonial-indis">
+                  <li class="active">
+                    <img src="assets/images/profile-pics/1.png" alt="prof" />
+                  </li>
+                  <li>
+                    <img src="assets/images/profile-pics/2.png" alt="prof" />
+                  </li>
+                  <li>
+                    <img src="assets/images/profile-pics/3.png" alt="prof" />
+                  </li>
+                  <li>
+                    <img src="assets/images/profile-pics/4.png" alt="prof" />
+                  </li>
+                  <li>
+                    <img src="assets/images/profile-pics/5.png" alt="prof" />
+                  </li>
+                  <li>
+                    <img src="assets/images/profile-pics/6.png" alt="prof" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box">
+                <div class="preview active-preview">
+                  <i class="ti-quote-left"></i>
+                  <p>
+                    Un viaje educativo sin igual. Juegos innovadores que hacen
+                    que aprender sea emocionante y cautivador. ¡Exploramos la
+                    galaxia del conocimiento juntos!
+                  </p>
+                  <div class="position-flex">
+                    <div class="img">
+                      <img src="assets/images/profile-pics/1.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h2>Hiroshi Tanaka</h2>
+                      <h4>Instructor Estelar</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview">
+                  <i class="ti-quote-left"></i>
+                  <p>
+                    Mi viaje educativo fue estelar. Juegos interactivos,
+                    experiencias únicas. ¡Una plataforma que hace que aprender
+                    sea emocionante!
+                  </p>
+                  <div class="position-flex">
+                    <div class="img">
+                      <img src="assets/images/profile-pics/2.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h2>Eleanor Morrison</h2>
+                      <h4>Innovador Tecnológica</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview">
+                  <i class="ti-quote-left"></i>
+                  <p>
+                    ¡Increíble! Aventuras educativas que despiertan la
+                    imaginación y promueven el aprendizaje activo. ¡Mis niños
+                    adoran cada momento!
+                  </p>
+                  <div class="position-flex">
+                    <div class="img">
+                      <img src="assets/images/profile-pics/3.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h2>Nadia Malik</h2>
+                      <h4>Ingeniera de Software</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview">
+                  <i class="ti-quote-left"></i>
+                  <p>
+                    Descubrir el universo nunca fue tan divertido. Juegos
+                    educativos cautivadores que inspiran la curiosidad cósmica.
+                  </p>
+                  <div class="position-flex">
+                    <div class="img">
+                      <img src="assets/images/profile-pics/4.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h2>Ana Santos</h2>
+                      <h4>Profesora</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview">
+                  <i class="ti-quote-left"></i>
+                  <p>
+                    La plataforma educativa llevó el aprendizaje a nuevas
+                    alturas. Juegos fascinantes y un viaje educativo emocionante
+                  </p>
+                  <div class="position-flex">
+                    <div class="img">
+                      <img src="assets/images/profile-pics/5.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h2>Alejandro Navarro</h2>
+                      <h4>Explorador Espacial</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview">
+                  <i class="ti-quote-left"></i>
+                  <p>
+                    Explorar el cosmos educativo fue asombroso! Juegos
+                    divertidos y aprendizaje infinito. ¡Gracias por esta
+                    experiencia única!
+                  </p>
+                  <div class="position-flex">
+                    <div class="img">
+                      <img src="assets/images/profile-pics/6.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h2>Kwane Nkosi</h2>
+                      <h4>Maestro de Ciencias</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- division -->
+              <div class="testimonial-btn">
+                <button type="button" onclick="left()">
+                  <i class="ti-arrow-left"></i>
+                </button>
+                <button type="button" onclick="right()">
+                  <i class="ti-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="layer-4">
+        <div class="faq-container">
+          <h1>Preguntas Estelares</h1>
+          <div class="tab">
+            <input type="radio" name="acc" id="acc1" />
+            <label for="acc1">
+              <h2>01</h2>
+              <h3>¿Se puede jugar en otros dispositivos?</h3>
+            </label>
+            <div class="faq-content">
+              <p>
+                Sí, nuestros juegos son compatibles con dispositivos móviles.
+                Puedes disfrutar de la diversión educativa en tu tableta o
+                teléfono.
+              </p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="acc" id="acc2" />
+            <label for="acc2">
+              <h2>02</h2>
+              <h3>¿Edades recomendadas para los juegos?</h3>
+            </label>
+            <div class="faq-content">
+              <p>
+                Nuestros juegos están diseñados para niños de 6 a 12 años, pero
+                pueden adaptarse a diferentes niveles de habilidad.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" name="acc" id="acc3" />
+            <label for="acc3">
+              <h2>03</h2>
+              <h3>¿Beneficios cognitivos de Desafío Planetario?</h3>
+            </label>
+            <div class="faq-content">
+              <p>
+                Desafío Planetario mejora la resolución de problemas y la
+                coordinación mano-ojo al desafiar a los niños a tomar desiciones
+                a contrareloj.
+              </p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="acc" id="acc4" />
+            <label for="acc4">
+              <h2>04</h2>
+              <h3>¿Cómo despierta la curiosidad de los niños?</h3>
+            </label>
+            <div class="faq-content">
+              <p>
+                Cada juego está diseñado para estimular la mente joven y
+                fomentar la exploración, brindando asi un desarrollo cognitivo
+                que ayudara a los niños.
+              </p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="acc" id="acc5" />
+            <label for="acc5">
+              <h2>05</h2>
+              <h3>¿Como puedo contactar con Astrobuds?</h3>
+            </label>
+            <div class="faq-content">
+              <p>
+                Puedes contactarnos enviando un mensaje a través de nuestro
+                formulario de <a href="#contact">Contacto</a> o escribenos por
+                <a href="#">Whatsapp</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="layer-5">
+        <div class="contact-wrapper">
+          <div class="_item">
+            <div class="contact">
+              <h4 class="first-txt">
+                Mensajes <br />
+                en órbita,
+              </h4>
+              <div class="vid-container">
+                <div class="circle-frame">
+                  <video
+                    width="560"
+                    height="315"
+                    autoplay
+                    loop
+                    muted
+                    class="disable-interaction"
+                  >
+                    <source
+                      src="assets/images/vid/galaxy-2.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+              <div class="social-message">
+                <span class="second-txt"
+                  >Tambien puedes contactarnos por
+                  <a href="#">Whatsapp</a>.</span
+                >
+              </div>
+            </div>
+            <div class="submit-form">
+              <h4 class="third-txt">contacta con nosotros.</h4>
+              <form action="">
+                <div class="input-box">
+                  <input type="text" class="input" required />
+                  <label>Nombre</label>
+                </div>
+                <div class="input-box">
+                  <input type="text" class="input" required />
+                  <label>Correo</label>
+                </div>
+
+                <div class="input-box">
+                  <textarea
+                    name=""
+                    class="input"
+                    requiredid="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <label>Mensaje</label>
+                </div>
+                <div class="contact-btn-container">
+                  <input type="submit" class="contact-btn" value="Enviar" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="animated">
+          <div id="wave-1" class="wave"></div>
+          <div id="wave-2" class="wave"></div>
+          <div id="wave-3" class="wave"></div>
+          <div id="wave-4" class="wave"></div>
+          <div id="wave-5" class="wave"></div>
+        </div>
+        <ul class="ft-icons">
+          <li>
+            <a href="#"><iconify-icon icon="mdi:github"></iconify-icon></a>
+          </li>
+          <li>
+            <a href="#"
+              ><iconify-icon icon="material-symbols:mail-rounded"></iconify-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+          </li>
+          <li>
+            <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+          </li>
+        </ul>
+        <ul class="timeline">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>
+          © Copyright 2023 | Todos los derechos reservados | by
+          <span>AstroBuds</span>
+        </p>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

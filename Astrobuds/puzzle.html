@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------web icon--------------------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/astronaut-logo.png"
+      type="image/x-icon"
+    />
+    <!-- ----------------------------icons ----------------------- -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- -------------------------------links------------------------------  -->
+    <link rel="stylesheet" href="style/puzzle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <meta name="author" content="William Garcia" />
+    <title>AstroBuds</title>
+  </head>
+  <body>
+    <header>
+      <div class="return">
+        <a href="home.html">
+          <iconify-icon icon="topcoat:back"></iconify-icon>
+          <p>Regresar</p>
+        </a>
+      </div>
+    </header>
+    <div id="bg-animation" class="bg-animation">
+      <div class="background"></div>
+    </div>
+
+    <main>
+      <div class="game-container hide">
+        <div class="header">
+          <div class="timer"></div>
+        </div>
+        <div class="container"></div>
+      </div>
+      <div class="score-container">
+        <div id="user-score"></div>
+        <button id="start">Iniciar</button>
+      </div>
+    </main>
+
+    <script src="js/puzzle.js" defer></script>
+  </body>
+</html>

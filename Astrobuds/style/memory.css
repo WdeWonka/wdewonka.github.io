@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bx-color: rgb(148, 87, 235);
+  --bg-bx-color: #1d1d1d;
+}
+
+body {
+  background-color: #000;
+}
+
+.return {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.return a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.return a p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.return a iconify-icon {
+  font-size: 30px;
+}
+
+.return:hover {
+  transform: scale(1.1);
+}
+
+.bg-animation {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background-color: var(--bg-bx-color);
+  filter: saturate(2);
+  overflow: hidden;
+}
+
+.bx-color {
+  z-index: 2;
+  filter: brightness(1.1);
+  transition: 1s ease;
+  position: relative;
+  margin: 2px;
+  background-color: var(--bg-bx-color);
+}
+
+.bx-color:hover {
+  background: var(--bx-color);
+  transition-duration: 0s;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--bx-color);
+  filter: blur(60px);
+  animation: animateBg 6s linear infinite;
+}
+
+@keyframes animateBg {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 120%;
+  }
+}
+
+.game-wrapper {
+  box-sizing: content-box;
+  width: 24em;
+  padding: 2.5em 2.5em;
+  background-color: #f1f3f0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 1em;
+  box-shadow: 0 0.8em 2.8em rgba(255, 255, 255, 0.2);
+  z-index: 3;
+  display: none;
+}
+
+.game-box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 1.3em;
+}
+.image {
+  height: 80px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.2em;
+}
+
+.stats-container span {
+  font-weight: 500;
+}
+
+.card-container {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-container.is-flipped .card-before {
+  transform: rotateY(180deg);
+}
+
+.card-container.is-flipped .card-after {
+  transform: rotateY(0);
+}
+
+.card-before,
+.card-after {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.7s ease-out;
+  backface-visibility: hidden;
+}
+
+.card-after {
+  background-color: #f1f3f0;
+  border: 4px solid #000000;
+  transform: rotateY(180deg);
+}
+
+.controls-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  border: none;
+  border-radius: 0.3em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+
+#start {
+  text-transform: uppercase;
+}
+
+#stop {
+  font-size: 1.1em;
+  display: block;
+  margin: 1.1em auto 0 auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.controls-container button {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.3em;
+  box-shadow: 0 0.6em 2em rgba(255, 255, 255, 0.2);
+  animation: float-img 2.5s ease-in-out infinite;
+}
+
+/* floating effect */
+
+@keyframes float-img {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.75rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#result {
+  text-align: center;
+}
+
+#result h2 {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+#result h4 {
+  color: #fff;
+  font-size: 1.8em;
+  margin: 0.6em 0 1em 0;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------web icon--------------------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/astronaut-logo.png"
+      type="image/x-icon"
+    />
+    <!-- ----------------------------icons ----------------------- -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- -------------------------------links------------------------------  -->
+    <link rel="stylesheet" href="style/login.css" />
+
+    <meta name="author" content="William Garcia" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>AstroBuds</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cloud-intro"></div>
+    </div>
+
+    <!-- --------------division -------------- -->
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Iniciar Sesion
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Registrarse
+          </button>
+        </div>
+        <div class="welcome-text">
+          <h1 id="txt">Iniciar Sesión</h1>
+        </div>
+        <form id="login" class="input-group" autocomplete="off">
+          <input
+            type="text"
+            id="user"
+            name="user"
+            class="input-field"
+            placeholder="Usuario"
+            required
+          />
+          <input
+            type="text"
+            id="pass"
+            class="input-field"
+            name="pass"
+            placeholder="Contraseña"
+            required
+          />
+          <div class="check-box">
+            <p><b>Usuario de prueba:</b></p>
+            <p class="text">Usuario: alumno | Contraseña: 2023</p>
+          </div>
+
+          <button type="submit" id="login" class="submit-btn">
+            Iniciar Sesión
+          </button>
+        </form>
+
+        <form id="register" class="input-group" autocomplete="off">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Usuario"
+            name="user2"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            name="correo"
+            placeholder="Correo"
+            required
+          />
+
+          <input
+            type="text"
+            class="input-field"
+            name="pass2"
+            placeholder="Contraseña"
+          />
+          <input type="checkbox" class="check-box" required />
+          <span class="terms"
+            >Acepto los <a href="#">terminos & condiciones</a>.</span
+          >
+          <button type="submit" value="login" class="submit-btn">
+            Registrarse
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/login.js" defer></script>
+  </body>
+</html>

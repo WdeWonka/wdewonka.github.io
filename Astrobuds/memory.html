@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------web icon--------------------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/astronaut-logo.png"
+      type="image/x-icon"
+    />
+    <!-- ----------------------------icons ----------------------- -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- -------------------------------links------------------------------  -->
+    <link rel="stylesheet" href="style/memory.css" />
+
+    <meta name="author" content="William Garcia" />
+    <title>AstroBuds</title>
+  </head>
+  <body>
+    <header>
+      <div class="return">
+        <a href="home.html">
+          <iconify-icon icon="topcoat:back"></iconify-icon>
+          <p>Regresar</p>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="memory">
+        <div class="game-wrapper">
+          <div class="stats-container">
+            <div id="move-counter"></div>
+            <div id="time"></div>
+          </div>
+          <div class="game-box"></div>
+          <button id="stop" class="hide">PAUSAR</button>
+        </div>
+        <div class="controls-container">
+          <p id="result"></p>
+          <button id="start">jugar</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="bg-animation" class="bg-animation">
+      <div class="background"></div>
+    </div>
+    <script src="js/memoria.js" defer></script>
+  </body>
+</html>
