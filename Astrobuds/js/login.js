@@ -73,10 +73,3 @@ function vera(user, pass) {
   }
 }
 
-//---- IF  register , moves back to the home------------
-document.addEventListener("DOMContentLoaded", function () {
-  let isLoggedIn = localStorage.getItem("isLoggedIn");
-  if (!isLoggedIn || isLoggedIn !== "false") {
-    window.location.replace("home.html");
-  }
-});
